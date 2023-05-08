@@ -135,7 +135,8 @@ h2{
     font-size: 3rem;
     color: var(--primary-color);
     text-align: center;
-    padding:1rem 0 2rem 0 ;
+    padding:1rem 0 2rem 0;
+    text-transform: capitalize;
 }
 #box-style{
     width:50%;
@@ -145,10 +146,10 @@ h2{
     width: 100%;
     justify-content:space-evenly;
 }
-.card{
+.card-des1{
     width: 18rem;
     height: 20rem;
-    height: 700px;
+    /* height: 700px; */
     padding: 2rem 1rem;
     background: #fff;
     position: relative;
@@ -157,12 +158,12 @@ h2{
     transition: 0.5s ease-in-out; 
 }
 
-.card:hover{
+.card-des1:hover{
     transform: translateY(20px);
     box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
 }
 
-.card::before{
+.card-des1::before{
     content: "";
     position: absolute;
     top:0;
@@ -176,11 +177,11 @@ h2{
     opacity: 0;
 }
 
-.card:hover::before{
+.card-des1:hover::before{
     opacity: 1;
 }
 
-.card img{
+.card-des1 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -188,7 +189,7 @@ h2{
     top:0;
     left: 0;
 }
-.card .card-info{
+.card-des1 .card-info{
     position: relative;
     z-index: 3;
     color: #fff;
@@ -197,19 +198,64 @@ h2{
     transition: 0.5s all;
 }
 
-.card:hover .card-info{
+.card-des1:hover .card-info{
     opacity: 1;
     transform: translateY(0px);
 }
 
-.card .card-info h1{
+.card-des1 .card-info h1{
     margin: 0;
 }
 
-.card .card-info p{
+.card-des1 .card-info p{
     letter-spacing: 1px;
     font-size: 1rem;
     margin-top: 8px;
     margin-bottom: 20px;
     
 }
+
+/* 
+                Blog Section
+*/
+.blog-post{
+    padding: 0 0 5% 0;
+}
+/* .container{
+    margin: 5%;
+} */
+
+.inner{
+    overflow: hidden;
+    }
+
+.inner img{
+    transition: all 1s ease;
+}
+
+.inner:hover img{
+    transform: scale(1.1);
+}
+.col-md-4{
+    padding:1%;
+}
+
+/* Career Section */
+.career-sec{
+    width: 100%;
+    background: url("images/pexels-pixabay-52500.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment:fixed;
+    /* background-position:0 71.9125rem; */
+    padding: 4.375rem 0;
+}
+.career-sec .card, .career-sec .card img{
+border-radius: 0.625rem;
+}
+
+
+.career{
+    padding-left: 2rem;
+    
+}
+
